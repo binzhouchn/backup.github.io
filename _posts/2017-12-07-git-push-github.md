@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "这是徐代龙进行的第二篇文章"
-categories: SnakeSon
+title:  "这是周彬进行的第二篇文章"
+categories: Tony-J
 tags:  hexo JavaScript
-author: SnakeSon
+author: Tony-J
 ---
 
 * content
