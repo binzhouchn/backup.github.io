@@ -56,7 +56,7 @@ author: Tony-J
 [Spark-2.0.2版本pom.xml](https://github.com/binzhouchn/big_data/blob/master/spark_notes/02.spark_scala/2.maven_config/pom-2.0.2.xml)<br>
 
 打开xml文件并且将此pom文件内容粘贴到新建工程中的pom文件中，下面的字段要根据应用工程实际情况设置：<br>
-```java
+```javascript
 <groupId>com.xxx.spark-2.0.2.1-test</groupId>
 <artifactId>com.xxx.spark-2.0.2.1-test</artifactId>
 ......
@@ -64,3 +64,73 @@ author: Tony-J
     <mainClass>com.xxx.spark-2.0.2.1-test</mainClass>
 </manifest>
 ```
+注意：下面版本需要和集群版本保持一致：<br>
+** spark-1.5.2.5版本示例：**<br>
+```javascript
+<scala.version>2.10.4</scala.version>
+<spark.version>1.5.2.5</spark.version>
+```
+** spark-2.0.2.1版本示例：**<br>
+```javascript
+<scala.version>2.11.8</scala.version>
+<spark.version>2.0.2.1</spark.version>
+```
+另外要注意：<br>
+ - pom文件中spark相关的包设置provided，无需将其打入应用Jar包！<br>
+ - 如何查看spark版本：进入spark集群所在的服务器输入change_spark_version.如果要更改则比如source change_spark_version spark-2.0.2.1<br>
+![](https://img-blog.csdn.net/20180708101855177?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+4.6 在pom文件粘贴过程中如果发现依赖包无法导入的现象，解决方法如下：<br>
+将以下settings.xml文件替换掉maven文件中conf文件夹下的同名文件<br>
+[settings.xml](https://github.com/binzhouchn/big_data/blob/master/spark_notes/02.spark_scala/2.maven_config/settings.xml)<br>
+然后进入【File】--【Settings】–【Maven】将User settings file override成安装的maven中的xml文件<br>
+![](https://img-blog.csdn.net/2018070810201515?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+## 5. 新建scala类文件，写一个简单的wordcount入门程序
+
+5.1 在scala代码文件夹下新建Scala类文件：<br>
+![](https://img-blog.csdn.net/20180708102023105?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+5.2 输入name，并且选择object，不要选class。因为main方法只在object中能使用<br>
+![](https://img-blog.csdn.net/20180708102039963?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+5.3 敲入wordcount代码：<br>
+![](https://img-blog.csdn.net/20180708102057266?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+5.4 写完代码，我们开始编译打包这个wordcount应用：<br>
+首先我们在idea中调出terminal，然后输入 mvn assembly:assembly 等待编译完成出现以下提示：<br>
+![](https://img-blog.csdn.net/20180708102106929?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)<br>
+此时在sidebar中会出现以下内容及编译完成后的jar包：<br>
+![](https://img-blog.csdn.net/20180708102120634?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+## 6. Spark任务提交
+
+6.1 将编译生成的jar包拷贝出来，放到服务器中，可以用FTP或者在服务器terminal中输入rz(需要安装)选择拷贝出来的jar包上传到服务器<br>
+![](https://img-blog.csdn.net/20180708102149865?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+6.2 这时我们的服务器上有了jar包和测试数据，测试数据可以自行创建，红框已标注两个文件<br>
+![](https://img-blog.csdn.net/20180708102224881?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)<br>
+word1.txt内容<br>
+![](https://img-blog.csdn.net/20180708102235824?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+6.3 将服务器上的文件上传到hdfs，
+```
+hadoop fs -put com.xxx.spark-2.0.2.1-test-1.0-SNAPSHOT.jar testData
+```
+```
+hadoop fs -put word1.txt testData
+```
+上传完成后用命令查看 hadoop fs -ls testData我们可以看到在hdfs testData下有了这两个文件<br>
+![](https://img-blog.csdn.net/20180708102251508?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+6.4 文件上传到hdfs以后，进入spark bin目录下用 spark-submit命令跑jar文件<br>
+![](https://img-blog.csdn.net/2018070810233092?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)<br>
+跑完成功以后显示：<br>
+![](https://img-blog.csdn.net/2018070810231690?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+6.5 此时再用命令hadoop fs -ls testData我们可以发现多了一个output的文件夹，我们把这个文件夹下载到服务器<br>
+ 用命令 hadoop fs -get testData/output，我们可以进到output文件夹查看输出结果。
+
+## 7. 至此我们从配置到编译到提交任务简单的走了一遍，如果大家有困惑或者值得改进的地方，请随时和我交流！
+
+
