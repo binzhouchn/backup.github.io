@@ -26,7 +26,7 @@ author: Tony-J
 2.2打开idea进入Settings，搜索Maven，然后在Maven home directory改成解压maven的存放地址如下图所示：<br>
 ![](https://img-blog.csdn.net/20180708095450509?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
-## 3. 以上推荐使用的开发环境软件下载：
+## 3. 以上推荐使用开发环境软件下载
 
 |软件|版本|下载地址
 |--|--|--
@@ -131,6 +131,8 @@ hadoop fs -put word1.txt testData
 6.5 此时再用命令hadoop fs -ls testData我们可以发现多了一个output的文件夹，我们把这个文件夹下载到服务器<br>
  用命令 hadoop fs -get testData/output，我们可以进到output文件夹查看输出结果。
 
-## 7. 至此我们从配置到编译到提交任务简单的走了一遍，如果大家有困惑或者值得改进的地方，请随时和我交流！
+## 7. 最后
+
+至此我们从配置到编译到提交任务简单的走了一遍，如果大家有困惑或者值得改进的地方，请随时和我交流！
 
 
