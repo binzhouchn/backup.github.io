@@ -11,6 +11,7 @@ author: binzhou
 
 # pycharm远程配置
 
+
 pycharm远程配置： <br>
 file->Settings->Project Interpreter->加入远程ssh的连接和python的执行文件地址 <br>
 然后再加一个path mappings（本地和远程的文件存储地址）<br>
@@ -22,6 +23,8 @@ Web server root URL: http:/// <br>
 Mappings选local path工程目录，其他的都为/ <br>
 
 done!
+
+---
 
 # 远程ipython
 
