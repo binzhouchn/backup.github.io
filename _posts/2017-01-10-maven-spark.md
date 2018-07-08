@@ -3,7 +3,7 @@ layout: post
 title:  "Maven配置、编译打包Spark应用以及测试环境提交(windows)"
 categories: Spark
 tags:  Spark Maven
-author: Tony-J
+author: binzhou
 ---
 
 * content
