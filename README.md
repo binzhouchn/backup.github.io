@@ -50,10 +50,10 @@
 先上预览图：
 
 主页
-![index](https://img-blog.csdn.net/20180708174723525?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://img-blog.csdn.net/20180708180626138?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 文章页
-![post](https://img-blog.csdn.net/20180708174737320?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://img-blog.csdn.net/20180708180636736?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ## 各部分详情
 
@@ -117,7 +117,7 @@ disqus_shortname: xxx
 
 完美适配移动端。
 
-![mobile](https://img-blog.csdn.net/20180708174750362?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://img-blog.csdn.net/20180708180645830?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ### Footer
 
@@ -309,7 +309,7 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 
 ## 点赞 Favor
 
-如果您喜欢这个主题，请给个Star；关于更改主题，背景颜色等任何问题请联系我。
+**如果您喜欢这个主题，请给个Star；关于更改主题，背景颜色等任何问题请联系我。**
 
 ## Update Log from Gaohaoyang
 
