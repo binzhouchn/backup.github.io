@@ -18,17 +18,16 @@ twitter_username: #gaohaoyang126
 facebook_username: #gaohaoyang.water
 github_username:  binzhouchn
 email: 5493897@QQ.com
-weibo_username: 3115521wh
-zhihu_username: hll643435675
-linkedIn_username: gaohaoyang
+weibo_username: Tony0J
+zhihu_username: Tony-J
+linkedIn_username: binzhou(tmp)
 dribbble_username:
 
 description_footer: 来自周彬的个人专栏！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
-# 两种评论插件，选一个就好了，使用自己的 short_name
-# duoshuo_shortname: binzhouchn 应该已经倒闭了
+# 两种评论插件，选一个就好了，disqus使用自己的short_name
 # disqus_shortname: binzhouchn 可以用但是得FQ
 LiveRe_control: true
 
