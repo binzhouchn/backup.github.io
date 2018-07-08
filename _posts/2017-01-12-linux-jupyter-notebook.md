@@ -111,4 +111,5 @@ jupyter notebook --config=/data/home/binzhou/.ipython/profile_myserver/ipython_n
 
 ## 7. 最后
 
-我写在github中的方式，和这个方法一样，只是多了一个pem这样就能像第6点一样用https访问了。
+我写在github中的方式，和这个方法一样，只是多了一个pem这样就能像第6点一样用https访问了。<br>
+[链接](https://github.com/binzhouchn/python_notes/tree/master/%E8%BF%9C%E7%A8%8Bipython#pycharm%E8%BF%9C%E7%A8%8B%E9%85%8D%E7%BD%AE)
