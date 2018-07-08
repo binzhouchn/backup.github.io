@@ -50,10 +50,10 @@
 先上预览图：
 
 主页
-![](https://img-blog.csdn.net/20180708180626138?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![main_page](images/blog1.png)
 
 文章页
-![](https://img-blog.csdn.net/20180708180636736?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![sub_page](images/blog2.png)
 
 ## 各部分详情
 
@@ -117,7 +117,7 @@ disqus_shortname: xxx
 
 完美适配移动端。
 
-![](https://img-blog.csdn.net/20180708180645830?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![mobile](images/blog3.png)
 
 ### Footer
 
