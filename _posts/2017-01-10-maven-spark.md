@@ -27,11 +27,11 @@ author: Tony-J
 
 |软件|版本|下载地址
 |--|--|--
-|Java|jdk1.7.0_60|java()
-|Maven|maven-3.3.9|maven()
-|Scala(for spark-1.5)|scala-2.10.4|scala-2.10()
-|Scala(for spark-2.0)|scala-2.11.8|scala-2.11()
-|Intellij idea|community|idea
+|Java|jdk1.7.0_60|[java官网](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+|Maven|maven-3.3.9|[maven官网](https://maven.apache.org/download.cgi)
+|Scala(for spark-1.5)|scala-2.10.4|[scala-2.10](https://www.scala-lang.org/)
+|Scala(for spark-2.0)|scala-2.11.8|[scala-2.11](https://www.scala-lang.org/)
+|Intellij idea|community|[idea](https://www.jetbrains.com/idea/download/)
 
 ## 4. 在idea中创建maven工程
 
