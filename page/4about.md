@@ -11,23 +11,21 @@ type: page
 
 ## 关于我
 
-<iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+就职于SN
 
-就职于XXX
-
-* 2016.12 入职xxx
-* 2015.01 入学xxx
+* 2016.12 入职SN，目前从事人工智能方向
+* 2015.01 入学CU
 
 ## 联系我
 
-* GitHub：[BinZhou](https://github.com/binzhouchn)
+* github：https://github.com/binzhouchn
 * email：binzhouchn@gmail.com
-* [Weibo](http://weibo.com/3115521wh)
-* [知乎](https://www.zhihu.com/people/gaohaoyang)
-* [Facebook](https://www.facebook.com/gaohaoyang.water)
-* [Twitter](https://twitter.com/gaohaoyang126)
-* [豆瓣](https://www.douban.com/people/42525035/)
-* [豆瓣音乐人-浩阳的小站](https://site.douban.com/haoyangaiyinyue/)
+* wechat/qq：5493897
+* [Weibo](http://weibo.com/Tony0J)
+* [知乎](https://www.zhihu.com/people/Tony-J)
+* [Facebook](https://www.facebook.com/binzhouchn.water)
+* [Twitter](https://twitter.com/binzhouchn)
+* [豆瓣](https://www.douban.com/people/binzhou/)
 
 ## 关于本站
 
