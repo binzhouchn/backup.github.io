@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Maven配置、编译打包Spark应用以及测试环境提交(windows)"
-categories: Spark
+categories: spark
 tags:  Spark Maven
 author: binzhou
 ---
