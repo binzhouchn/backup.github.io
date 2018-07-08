@@ -52,8 +52,8 @@ author: Tony-J
 ![](https://img-blog.csdn.net/20180708101550788?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3F1YW50YmFieQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 4.5 修改pom.xml文件，以下是苏宁spark开发人员已经配置好的xml文件可以直接下载<br>
-[Spark-1.5.2版本pom.xml]()<br>
-[Spark-2.0.2版本pom.xml]()<br>
+[Spark-1.5.2版本pom.xml](https://github.com/binzhouchn/binzhouchn.github.io/blob/master/myfiles/pom-1.5.2.xml)<br>
+[Spark-2.0.2版本pom.xml](https://github.com/binzhouchn/binzhouchn.github.io/blob/master/myfiles/pom-2.0.2.xml)<br>
 
 打开xml文件并且将此pom文件内容粘贴到新建工程中的pom文件中，下面的字段要根据应用工程实际情况设置：<br>
 ```java
